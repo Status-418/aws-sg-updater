@@ -1,6 +1,4 @@
-FROM alpine:latest
-
-RUN apt-get update -y && apt-get install -y python python-pip python-dev build-essential
+FROM python:3.6-alpine
 
 COPY . /app
 WORKDIR /app

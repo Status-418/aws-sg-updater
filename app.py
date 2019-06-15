@@ -51,7 +51,7 @@ def update_sg(all_ips, security_group, region):
 
         permission['UserIdGroupPairs'] = []
 
-        ips_to_add = list(set(combined_ips).difference(sg_ips))inu
+        ips_to_add = list(set(combined_ips).difference(sg_ips))
         ips_to_remove = list(set(sg_ips).difference(combined_ips))
 
         if not ips_to_add == ips_to_remove:
